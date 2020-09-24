@@ -1,6 +1,6 @@
 module GLAPACK
 # missing or inadequate wrappers: tgsen, tgsyl
-using LinearAlgebra
+#using LinearAlgebra
 
 const liblapack = Base.liblapack_name
 
