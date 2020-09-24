@@ -8,7 +8,7 @@
 # using internal functions is doomed to confusion.
 
 using LinearAlgebra: givensAlgorithm
-
+export ggschur!
 # decomposition is A = Q S Z', B = Q  Tmat Z'
 
 function schur!(A::StridedMatrix{T}, B::StridedMatrix{T}; kwargs...) where {T<:Complex}
