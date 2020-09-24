@@ -6,7 +6,7 @@ import LinearAlgebra: lmul!, mul!, checksquare, ldiv!
 
 # This is the public interface of the package.
 # Wrappers like `schur` and `eigvals` should just work.
-import LinearAlgebra: schur!, eigvals!, eigvecs, eigen!
+# import LinearAlgebra: schur!, eigvals!, eigvecs, eigen!
 export triangularize, eigvalscond, subspacesep, balance!
 
 schur!(A::StridedMatrix{T}; kwargs...) where {T} = gschur!(A; kwargs...)
